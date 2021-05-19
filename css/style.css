@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header {
     background-color: black;
     width: 100%;
@@ -27,4 +38,9 @@
 .button {
     width: 90px;
     height: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    color: #fff;
 }
