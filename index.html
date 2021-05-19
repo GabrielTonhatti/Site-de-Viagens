@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,29 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Unifly </title>
     <link rel="icon" href="img/voo-de-aviao.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="home">
-            <a href="index.html">
-                <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
-            </a>
-            <div class="login">
-                <button type="submit" class="button" id="sign-in"> Sign in </button>
-                <button type="submit" class="button" id="sign-up"> Sign Up </button>
-            </div>
-        </div>
         <nav class="nav">
-            <ul class="menu">
-                <li><a href="#"> Hospedagens </a></li>
-                <li><a href="#"> Viagens </a></li>
-                <li><a href="#"> Aluguel de carros </a></li>
-            </ul>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
+                </a>
+
+                <div class="toggle-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="login ">
+                    <button type="submit" class="button" id="sign-in"> Sign in </button>
+                    <button type="submit" class="button" id="sign-up"> Sign Up </button>
+                </div>
+            </div>
+
+
+            <div class="menu-bar" id="navigation">
+                <ul class="menu">
+                    <li><a href="#"> <i class="fas fa-hotel"></i> Hospedagens </a></li>
+                    <li><a href="#"> <i class='bx bxs-plane-alt airplane'></i> Viagens <i
+                                class='bx bxs-chevron-down'></i></a></li>
+                    <li><a href="#"> <i class="fas fa-car cars"></i> Aluguel de carros </a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 
+    <script src="https://kit.fontawesome.com/367a536935.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

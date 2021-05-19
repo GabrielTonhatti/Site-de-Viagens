@@ -1,48 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
-}
-
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .header {
     background-color: black;
     width: 100%;
     height: 150px;
-    display: flex;
-    align-items: center;
 }
 
-.home {
+.logo {
     display: flex;
+    align-self: multiplos;
     justify-content: space-between;
-    width: 100%;
-    padding-right: 40px;
+}
+
+.nav .menu-bar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav .menu-bar ul li a {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    transition: all .3s;
 }
 
 .img {
-    padding-left: 40px;
-    width: 250px;
-    height: 80px;
+    margin-left: 30px;
+    width: 150px;
+    height: 60px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .button {
-    width: 90px;
-    height: 30px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
 
+/* Menu Hidden/ Show */
+
+.nav {
+    padding: 20px 25px;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(182, 182, 182);
+    border-top: 2px solid #2d94e9;
+    text-align: center;
+    z-index: 2;
+}
+
+.menu-bar ul li {
+    display: block !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #fff;
+}
+
+.menu-bar ul li:last-child {
+    border-bottom: 0px;
+}
+
+.menu-bar ul li a {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu-bar ul li a::after{
+    display: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #2d94e9;
+    color: #fff;
+}
+.menu-bar.open {
+    display: block;
+}
+
+.menu-bar {
+    display: none;
+}
+
+/* toggle menu */
+.toggle-bar {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
     cursor: pointer;
 }
 
-.menu {
-    color: #fff;
+.toggle-bar span {
+    display: block;
+    width: 100%;
+    height:  3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: transform .3s ease;
 }
 
+.toggle-bar.open span {
+    position: absolute;
+}
+
+.toggle-bar.open span:first-child {
+    top: 13px;
+    transform: rotate(45deg);
+}
+
+.toggle-bar.open span:nth-child(2) {
+    visibility: hidden;
+}
+
+.toggle-bar.open span:last-child {
+    top: 13px;
+    width: 100%;
+    transform: rotate(-45deg);
+}
