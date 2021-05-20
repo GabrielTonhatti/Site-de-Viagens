@@ -12,7 +12,7 @@
     height: 150px;
 }
 
-.logo {
+.mobile {
     display: flex;
     align-self: multiplos;
     justify-content: space-between;
@@ -34,14 +34,14 @@
 }
 
 .img {
-    margin-left: 30px;
+    margin-left: 50px;
     width: 150px;
     height: 60px;
 }
 
 .login {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -49,6 +49,9 @@
     background-color: #fff;
     outline: none;
     border: none;
+    width: 100px;
+    height: 25px;
+    font-weight: 700;
 }
 
 /* Menu Hidden/ Show */
