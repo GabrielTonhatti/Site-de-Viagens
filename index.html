@@ -8,36 +8,52 @@
     <title> Unifly </title>
     <link rel="icon" href="img/voo-de-aviao.png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
+    <div class="login">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
+            </a>
+        </div>
+
+        <div class="login__btn">
+            <input type="submit" value="Sign Up" class="login__signUp">
+            <input type="submit" value="Sign In" class="login__signIn">
+        </div>
+    </div>
     <header class="header">
         <nav class="nav">
-            <div class="logo">
-                <div class="mobile">
-                    <a href="index.html">
-                        <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
-                    </a>
-
-                    <div class="toggle-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="login ">
-                    <button type="submit" class="button" id="sign-in"> Sign in </button>
-                    <button type="submit" class="button" id="sign-up"> Sign Up </button>
-                </div>
+            <div class="toggle-bar">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
 
+            <div class="login__mobile">
+                <input type="submit" value="Sign Up" class="login__signUp">
+                <input type="submit" value="Sign In" class="login__signIn">
+            </div>
 
             <div class="menu-bar" id="navigation">
                 <ul class="menu">
                     <li><a href="#"> <i class="fas fa-hotel"></i> Hospedagens </a></li>
-                    <li><a href="#"> <i class='bx bxs-plane-alt airplane'></i> Viagens <i
-                                class='bx bxs-chevron-down'></i></a></li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__link"> <i class='bx bxs-plane-alt airplane'></i> Viagens <i
+                                class='bx bxs-chevron-down dropdown__icon'></i></a>
+
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-plane-take-off' ></i> Avião </a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-bus' ></i> Ônibus </a></li>
+                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-car' ></i> Carro </a></li>
+                        </ul>
+                        
+                    </li>
+
                     <li><a href="#"> <i class="fas fa-car cars"></i> Aluguel de carros </a></li>
                 </ul>
             </div>
