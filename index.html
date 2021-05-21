@@ -12,59 +12,45 @@
 </head>
 
 <body>
-    <div class="login">
 
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
-            </a>
-        </div>
-
-        <div class="login__btn">
-            <input type="submit" value="Sign Up" class="login__signUp">
-            <input type="submit" value="Sign In" class="login__signIn">
-        </div>
-    </div>
     <header class="header">
-        <nav class="nav">
-            <div class="toggle-bar">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="login">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo unifly.png" alt="Logo Unifly" class="img">
+                </a>
             </div>
 
-            <div class="login__mobile">
+            <div class="login__btn">
                 <input type="submit" value="Sign Up" class="login__signUp">
                 <input type="submit" value="Sign In" class="login__signIn">
             </div>
-
-            <div class="menu-bar" id="navigation">
-                <ul class="menu">
-                    <li><a href="#"> <i class="fas fa-hotel"></i> Hospedagens </a></li>
-
-                    <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropdown__link"> <i class='bx bxs-plane-alt airplane'></i> Viagens <i
-                                class='bx bxs-chevron-down dropdown__icon'></i></a>
-
-                        <ul class="dropdown__menu">
-                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-plane-take-off' ></i> Avião </a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-bus' ></i> Ônibus </a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link"> <i class='bx bxs-car' ></i> Carro </a></li>
-                        </ul>
-                        
-                    </li>
-
-                    <li><a href="#"> <i class="fas fa-car cars"></i> Aluguel de carros </a></li>
-                </ul>
-            </div>
-
-        </nav>
+        </div>
     </header>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+
+    <nav class="menu">
+
+        <ul>
+            <li><a href="#"> <i class="fas fa-hotel"></i> Hospedagens </a></li>
+            <li><a href="#" class="dropdown"> <i class='bx bxs-plane-alt airplane'></i> Viagens <i
+                        class='bx bxs-chevron-down dropdown__icon'></i> </a>
+                <ul>
+                    <li><a href="#"> <i class='bx bxs-plane-take-off'></i> Avião </a></li>
+                    <li><a href="#"> <i class='bx bxs-bus'></i> Ônibus </a></li>
+                    <li><a href="#"> <i class='bx bxs-car'></i> Carro </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="Aluguel"> <i class="fas fa-car cars"></i> Veículos </a> </a></li>
+        </ul>
+
+    </nav>
 
     <script src="https://kit.fontawesome.com/367a536935.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

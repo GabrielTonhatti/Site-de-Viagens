@@ -6,19 +6,6 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-:root{
-    --header-height: 3rem;
-}
-
-body {
-    background-color: #333;
-}
-
-.header {
-    background-color: black;
-    width: 100%;
-}
-
 .login {
     width: 100%;
     height: 100px;
@@ -27,18 +14,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
-}
-
-.login__redes {
-    display: flex;
-}
-
-.login__item {
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    margin-right: 5px;
-    border-radius: 50%;
 }
 
 .img {
@@ -65,252 +40,123 @@ input:hover {
     transform: scale(1.1);
 }
 
-.login__mobile {
-    display: none;
-}
-
-.nav {
+.menu {
+    padding-left: 150px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 150px;
+    height: 50px;
+    background-color: #222;
+    font-family: 'Arial';
 }
 
-.nav .menu-bar ul {
-    padding: 0;
-    margin: 0;
-}
-
-.nav .menu-bar ul li {
-    display: inline-block;
+.menu ul {
     list-style: none;
-    margin-right: 30px;
+    position: relative;
 }
 
-.nav .menu-bar ul li a {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
     text-decoration: none;
-    text-transform: capitalize;
-    position: relative;
-    transition: all .3s;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
 }
 
-.nav .menu-bar ul li a.active:after {
-    content: '';
+.menu ul ul {
     position: absolute;
-    top: 25px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    border-radius: 10px;
-    background: #2d94e9;
-}
-
-.nav .menu-bar ul li a:after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    border-radius: 10px;
-    background: #2d94e9;
-    transition: width .3s;
-}
-
-.nav .menu-bar ul li a:hover:after {
-    width: 100%;
-}
-
-
-/* Responsive queries for mobile & tablet devices */
-
-@media (max-width: 767px) {
-    .login {
-        padding: 0 25px;
-        justify-content: center;
-    }
-    .img {
-        width: 150px;
-        height: 60px;
-    }
-    input {
-        margin-left: 10px;
-        padding: 5px;
-        width: 60px;
-        margin-bottom: 10px;
-        border: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 5px;
-        border-bottom: 4px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 5px 2px 4px 1px rgba(0, 0, 0, 0.2);
-        display: inline-block;
-        cursor: pointer;
-        transition-duration: .2s;
-    }
-    .login__btn {
-        display: none;
-    }
-    .login__mobile {
-        display: block;
-    }
-    .nav {
-        padding: 20px 25px;
-    }
-    .menu-bar {
-        position: absolute;
-        top: 175px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-top: 2px solid #2d94e9;
-        text-align: center;
-        z-index: 2;
-    }
-    .menu-bar ul li {
-        display: block !important;
-        margin: 0 !important;
-        border-bottom: 1px solid #ddd;
-    }
-    .nav .menu-bar ul li a {
-        font-size: 16px;
-        color: black;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: capitalize;
-        position: relative;
-        transition: all .3s;
-    }
-    .menu-bar ul li:last-child {
-        border-bottom: 0px;
-    }
-    .menu-bar ul li a {
-        display: block;
-        width: 100%;
-        padding: 20px 0;
-    }
-    .menu-bar ul li a::after {
-        display: none;
-    }
-    .menu-bar ul li a:hover {
-        background-color: #2d94e9;
-        color: #fff;
-    }
-    .menu-bar.open {
-        display: block;
-    }
-    .menu-bar {
-        display: none;
-    }
-}
-
-/* toggle-menu */
-
-.toggle-bar {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding-top: 6px;
-    cursor: pointer;
-}
-
-.toggle-bar span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    transition: transform .3s ease;
-}
-
-.toggle-bar.open span {
-    position: absolute;
-}
-
-.toggle-bar.open span:first-child {
-    top: 13px;
-    transform: rotate(45deg);
-}
-
-.toggle-bar.open span:nth-child(2) {
     visibility: hidden;
 }
 
-.toggle-bar.open span:last-child {
-    top: 13px;
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+label[for='bt_menu'] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
     width: 100%;
-    transform: rotate(-45deg);
+    height: 50px;
+    text-align: left;
 }
 
-/* hide toggle menu for large screen */
-
-@media (min-width: 768px) {
-    .toggle-bar {
-        display: none;
-    }
-    .menu-bar {
-        display: block !important;
-    }
-}
-
-/* ==== Dropdown ==== */
-
-.dropdown__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dropdown__icon {
-    font-size: 1.3rem;
-    transition: .5s;
-}
-
-.dropdown__menu {
-    margin: 1rem 0 0 1rem;
+#bt_menu {
     display: none;
 }
 
-.dropdown__item {
-    margin: 1rem 0;
+label[for='bt_menu'] {
+    display: none;
 }
 
-.dropdown:hover>.dropdown__menu {
-    display: block;
+.dropdown__icon {
+    transition: .5s;
 }
 
 .dropdown:hover .dropdown__icon {
     transform: rotate(180deg);
 }
 
-/* =====*
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown__menu {
-    position: fixed;
-    margin: 0;
-    top: calc((4rem) + 1rem);
-    padding: .5rem 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-}
-
-.dropdown__item {
-    margin: .5rem 0;
-}
-*/
-@media screen and (min-width: 1024px) {
-    .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 700px) {
+    .img {
+        width: 150px;
+        height: 60px;
+    }
+    .login {
+        padding: 0 25px;
+        justify-content: center;
+    }
+    input {
+        width: 58px;
+        margin-bottom: 10px;
+    }
+    label[for='bt_menu'] {
+        display: block;
+    }
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+    .menu {
+        padding-left: 0px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
     }
 }
