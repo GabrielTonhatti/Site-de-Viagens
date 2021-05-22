@@ -17,8 +17,10 @@
         <div class="shape2"></div>
 
         <div class="form">
-            <img src="../img/logo unifly.png" alt="unifly" class="form__img">
-
+            <a href="../index.html" class="home">
+                <img src="../img/logo unifly.png" alt="unifly" class="form__img">
+            </a>
+            
             <form action="" class="form__content">
                 <h1 class="form__title"> Login </h1>
 
@@ -39,14 +41,14 @@
                     </div>
 
                     <div class="form__div-input">
-                        <label for="" class="form__label" id = "pwd"> Password </label>
-                        <input type="password" class="form__input">
+                        <label for="" class="form__label"> Password </label>
+                        <input type="password" id="pwd" name="pwd" class="form__input">
                     </div>
                 </div>
 
                 <div class="password">
-                    <input type="checkbox" id="showPwd">
-                    <label for="showPwd" class="showPwd"> Show Password </label>
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword" class="showPwd"> Show Password </label>
                     <a href="#" class="form__forgot"> Forgot Password? </a>
                 </div>
 
@@ -55,6 +57,7 @@
                 </a>
 
                 <div class="form__social">
+                    <span class="border-top"></span>
                     <span class="form__social-text"> Or Login with </span>
 
                     <a href="#" class="form__social-icon"> <img src="../img/logo-google.png" alt="logo google"
@@ -70,8 +73,9 @@
 
     </div>
 
-    <script src = "../js/utilities.js"></script>
+
     <script src="../js/main.js"></script>
+    <script src="../js/showPwd.js"></script>
 </body>
 
 </html>
