@@ -1,6 +1,6 @@
 /* ==== GOOGLE FONTS ==== */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
 /* ==== VARIABLES CSS ==== */
 
 :root {
@@ -9,14 +9,14 @@
     --text-color: #8590AD;
     /* ==== Font and typography ==== */
     --body-font: 'Fira Sans', sans-serif;
-    --big-fonr-size: 2rem;
+    --big-font-size: 2rem;
     --normal-font-size: 0.938rem;
     --smaller-font-size: 0.875rem;
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        --big-fonr-size: 2.5rem;
+        --big-font-size: 2.5rem;
         --normal-font-size: 1rem;
     }
 }
@@ -94,7 +94,7 @@ img {
 }
 
 .form__title {
-    font-size: var(--big-fonr-size);
+    font-size: var(--big-font-size);
     font-weight: 500;
     margin-bottom: 2rem;
 }
@@ -172,13 +172,18 @@ img {
     justify-content: space-around;
 }
 
+#showPassword {
+    margin-left: -35px;
+}
+
 .showPwd {
-    font-size: var(--font-size);
+    font-size: var(--smaller-font-size);
     color: var(--text-color);
     text-align: left;
-    margin-left: -20px;
+    margin-left: -65px;
     font-weight: 500;
     transition: .5s;
+    cursor: pointer;
 }
 
 .showPwd:hover {
@@ -190,10 +195,10 @@ img {
     display: block;
     text-align: right;
     margin-bottom: 2rem;
-    font-size: var(--normal-font-size);
+    font-size: var(--smaller-font-size);
     color: var(--text-color);
     font-weight: 500;
-    margin-right: -10px;
+    margin-right: -35px;
     transition: .5s;
 }
 
@@ -229,7 +234,7 @@ img {
 .border-top {
     display: block;
     width: 50%;
-    height:  1px;
+    height: 1px;
     background-color: var(--text-color);
     margin-bottom: 20px;
     margin-left: 73px;
@@ -257,7 +262,6 @@ img {
 
 .form__social-icon:hover {
     transform: scale(1.1);
-
 }
 
 .google {
@@ -266,6 +270,7 @@ img {
 }
 
 /* ==== MEDIA QUERIS ==== */
+
 @media screen and (min-width: 968px) {
     .shape1 {
         width: 400px;
@@ -273,45 +278,40 @@ img {
         top: -11rem;
         left: -6.5rem;
     }
-    
     .shape2 {
         width: 300px;
         height: 300px;
         right: -6.5rem;
     }
-
     .form {
         grid-template-columns: 1.5fr 1fr;
         padding: 0 2rem;
     }
-
     .form__content {
         width: 320px;
     }
-
     .home {
         justify-self: center;
     }
-
     .form__img {
         display: block;
         width: 500px;
         justify-self: center;
         align-items: center;
     }
-
-.password {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-#showPassword {
-    margin-left: -20px;
-}
-
-.showPwd {
-    margin-left: -40px;
-}
-
+    .password {
+        display: flex;
+        justify-content: space-around;
+    }
+    #showPassword {
+        margin-left: -30px;
+    }
+    .showPwd {
+        margin-left: -65px;
+        text-align: left;
+        font-size: var(--normal-font-size);
+    }
+    .form__forgot {
+        font-size: var(--normal-font-size);
+    }
 }
