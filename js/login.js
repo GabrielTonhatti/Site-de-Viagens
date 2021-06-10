@@ -18,6 +18,7 @@ async function validation() {
                 isFormValid = false;
             } else {
                 isFormValid = true;
+                break
             }
         }
         
