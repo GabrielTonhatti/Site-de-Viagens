@@ -20,8 +20,11 @@
             <a href="../index.html" class="home">
                 <img src="../img/logo unifly.png" alt="unifly" class="form__img">
             </a>
-            
+
             <form action="../index.html" class="form__content">
+
+                <span class="login-Invalid" id="warning"></span>
+
                 <h1 class="form__title"> Login </h1>
 
                 <div class="form__div form__div-one">
@@ -31,7 +34,7 @@
 
                     <div class="form__div-input">
                         <label for="" class="form__label"> Email </label>
-                        <input type="email" class="form__input">
+                        <input type="email" class="form__input" id="email">
                     </div>
                 </div>
 
@@ -42,7 +45,7 @@
 
                     <div class="form__div-input">
                         <label for="" class="form__label"> Password </label>
-                        <input type="password" id="pwd" name="pwd" class="form__input">
+                        <input type="password" required id="pwd" autocomplete="current-password, username" name="pwd" class="form__input">
                     </div>
                 </div>
 
@@ -50,9 +53,10 @@
                     <input type="checkbox" id="showPassword">
                     <label for="showPassword" class="showPwd"> Show Password </label>
                     <a href="#" class="form__forgot"> Forgot Password? </a>
+
                 </div>
-                
-                    <input type="submit" class="form__buttom home" value="Login">
+
+                <input type="submit" class="form__buttom home" id="login" value="Login">
 
                 <div class="form__social">
                     <span class="border-top"></span>
@@ -74,6 +78,7 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/showPwd.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
