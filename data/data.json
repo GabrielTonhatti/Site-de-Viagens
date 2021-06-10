@@ -9,6 +9,16 @@
 			"name": "Rafaela",
 			"email": "rafaela.oliveira0202@hotmail.com",
 			"password": "rafa130321"
-		}
+		},
+		{ 
+			"name": "Samuel",
+			"email": "samcipriano@gmail.com",
+			"password": "samu24sentaEm4"
+		},
+		{
+			"name": "Gustavo",
+			"email": "extremepiece@hotmail.com",
+			"password": "gustavinhoExtreme"
+		} 
 	]
 }

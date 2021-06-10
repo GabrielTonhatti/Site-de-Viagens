@@ -21,13 +21,12 @@ async function validation() {
                 break
             }
         }
-        
+
         if (!isFormValid) {
             e.preventDefault();
             document.getElementById('warning').textContent = `Email ou Senha Inválidos!`
             document.getElementById('warning').style.display = "block"
         }
-
 
     }
 
@@ -36,7 +35,6 @@ async function validation() {
     let submit = document.getElementById('login');
 
     submit.addEventListener('click', login, false);
-
 }
 
 validation();
