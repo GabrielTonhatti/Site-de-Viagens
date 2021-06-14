@@ -9,6 +9,8 @@
     <link rel="icon" href="img/voo-de-aviao.png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                     <li><a href="#"> <i class='bx bxs-bus'></i> Ônibus </a></li>
                     <li><a href="#"> <i class='bx bxs-car'></i> Carro </a></li>
                 </ul>
-                
+
             </li>
             <li><a href="#" class="Aluguel"> <i class="fas fa-car cars"></i> Veículos </a></li>
         </ul>
@@ -55,7 +57,49 @@
 
     <main class="main">
 
+        <div class="search-box">
+            <i class='bx bxs-plane-alt airplane icone-aviao'></i>
+            <input type="text" class="busca" placeholder="Para onde você vai?">
+            <i class="fas fa-search icone"></i>
+        </div>
+
+        <h1> Lugares mais vistados: </h1>
+
         <section>
+
+            <div class="slider">
+
+                <div class="slide-viewer">
+                    <div class="slide-group">
+
+                        <div class="slide slide-1">
+                            <img src="img/slide-1.jpeg" alt="Paris">
+                        </div>
+                        <div class="slide slide-2">
+                            <img src="img/slide-2.jpg" alt="Nova York">
+                        </div>
+                        <div class="slide slide-3">
+                            <img src="img/slide-3.jpeg" alt="Real Madrid">
+                        </div>
+                        <div class="slide slide-4">
+                            <img src="img/slide-4.jpeg" alt="Dubai">
+                        </div>
+                        <div class="slide slide-5">
+                            <img src="img/slide-5.jpeg" alt="Havai">
+                        </div>
+                        <div class="slide slide-6">
+                            <img src="img/slide-6.jpeg" alt="Img 1">
+                        </div>
+                        <div class="slide slide-7">
+                            <img src="img/slide-7.jpeg" alt="img 2">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slide-buttons"></div>
+                
+            </div>
 
         </section>
 
@@ -65,9 +109,11 @@
 
     </footer>
 
+    <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://kit.fontawesome.com/367a536935.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
