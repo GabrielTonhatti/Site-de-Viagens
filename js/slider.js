@@ -27,12 +27,12 @@ $('.slider').each(function () {
         }
 
 
-        $slides.eq(newIndex).css( { left: slideLeft, display: 'block' } );
+        $slides.eq(newIndex).css({ left: slideLeft, display: 'block' });
 
-        $group.animate( { left: animateLeft }, function() {
-            $slides.eq(currentIndex).css( { display: 'none' } );
-            $slides.eq(newIndex).css( { left: 0} );
-            $group.css( { left: 0} );
+        $group.animate({ left: animateLeft }, function () {
+            $slides.eq(currentIndex).css({ display: 'none' });
+            $slides.eq(newIndex).css({ left: 0 });
+            $group.css({ left: 0 });
             currentIndex = newIndex;
         })
 
@@ -47,15 +47,15 @@ $('.slider').each(function () {
             } else {
                 move(0);
             }
-        }, 4000);
+        }, 6000);
     }
 
-    $.each($slides, function ( index) {
-        let $button = $('<button type = "button" class = "slide-btn>&bull;</button>');
-        if ( index === currentIndex) {
+    $.each($slides, function (index) {
+        let $button = $('<button type="button" class ="slide-btn">&bull;</button>');
+        if (index === currentIndex) {
             $button.addClass('active');
         }
-        $button.on('click', function() {
+        $button.on('click', function () {
             move(index);
         }).appendTo('.slide-buttons');
         buttonArray.push($button);
