@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.seta-esquerda {
+    font-size: 30px;
+    color: #1100FF;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.card {
+    background-color: #EAEFF6;
+    border-radius: 10px;
+    width: 200px;
+    transition-duration: .4s;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+/* 
+.card:hover {
+    transform: scale(1.07);
+} */
+
+.topCard {
+    padding: 20px;
+    padding-top: 10px;
+    height: 100px;
+}
+
+.title {
+    color: #1100FF;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.secondText {
+    font-size: 12px;
+    color: #828fa1;
+}
+
+.las-vegas {
+    background: url("https://media.istockphoto.com/photos/panoramic-view-of-las-vegas-strip-at-night-in-nevada-picture-id1166193649?k=6&m=1166193649&s=170667a&w=0&h=zshadBhEKIIUVDLA25I4-KckFJanWok46Zz34tzVnxg=") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.kyoto {
+    background: url("http://www.qualviagem.com.br/wp-content/uploads/2016/09/iStock_34637998_SMALL-e1473797953707.jpg") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.paris {
+    background: url("https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/04/paris_na_primavera.jpg?resize=740,480") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.dubai {
+    background: url("https://www.segueviagem.com.br/wp-content/uploads/2020/07/shutterstock_151616084-1024x684.jpg") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.honolulu {
+    background: url("https://radarvip.com/wp-content/uploads/2016/08/maxresdefault.jpg") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.vancouver {
+    background: url("https://etacanadavisa.com.br/main/wp-content/uploads/2019/05/1557450116_image1.jpeg") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.sydney {
+    background: url("https://ep01.epimg.net/elviajero/imagenes/2019/06/05/album/1559747677_909530_1559748130_noticia_normal.jpg") center/cover;
+    height: 150px;
+    width: 100%;
+}
+
+.linha-divisoria {
+    width: 100%;
+    height: 6px;
+    background-color: #1100FF;
+}
+
+.bottomCard {
+    padding: 10px;
+    padding-top: 0px;
+    display: flex;
+}
+
+.bottomText {
+    font-size: 7px;
+    color: #445b73;
+    text-align: left;
+    padding: 2px;
+}
+
+.info-preco {
+    font-size: 12px;
+    color: #445b73;
+    text-align: right;
+}
+
+.preco {
+    font-weight: bold;
+    color: black;
+}
+
+.preco-valor {
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.preco-a-vista {
+    font-size: 8px;
+}
+
+.actionsCard {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pacote {
+    background: none;
+    border: none;
+    color: #1100FF;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.adulto {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.seta-direita {
+    font-size: 30px;
+    color: #1100FF;
+    margin-left: 25px;
+    cursor: pointer;
+}
