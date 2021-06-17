@@ -11,6 +11,7 @@ body {
     align-content: center;
     margin: 0 auto;
     height: 50vh;
+    overflow: hidden;
 }
 
 .seta-esquerda {
@@ -23,7 +24,7 @@ body {
 .cards {
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 65%;
 }
 
 .card {
@@ -37,22 +38,22 @@ body {
 .active {
     display: block;
 }
-/* 
-.card:hover {
+
+/* .card:hover {
     transform: scale(1.07);
 } */
 
 .topCard {
     padding: 20px;
     padding-top: 10px;
-    height: 100px;
+    height: 110px;
+    text-align: center;
 }
 
 .title {
     color: #1100FF;
     font-size: 18px;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .secondText {
@@ -60,52 +61,44 @@ body {
     color: #828fa1;
 }
 
-.las-vegas {
-    background: url("https://media.istockphoto.com/photos/panoramic-view-of-las-vegas-strip-at-night-in-nevada-picture-id1166193649?k=6&m=1166193649&s=170667a&w=0&h=zshadBhEKIIUVDLA25I4-KckFJanWok46Zz34tzVnxg=") center/cover;
+.tamanho-img {
     height: 150px;
     width: 100%;
+}
+
+.las-vegas {
+    background: url("https://media.istockphoto.com/photos/panoramic-view-of-las-vegas-strip-at-night-in-nevada-picture-id1166193649?k=6&m=1166193649&s=170667a&w=0&h=zshadBhEKIIUVDLA25I4-KckFJanWok46Zz34tzVnxg=") center/cover;
 }
 
 .kyoto {
     background: url("http://www.qualviagem.com.br/wp-content/uploads/2016/09/iStock_34637998_SMALL-e1473797953707.jpg") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .paris {
     background: url("https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/04/paris_na_primavera.jpg?resize=740,480") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .dubai {
     background: url("https://www.segueviagem.com.br/wp-content/uploads/2020/07/shutterstock_151616084-1024x684.jpg") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .honolulu {
     background: url("https://radarvip.com/wp-content/uploads/2016/08/maxresdefault.jpg") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .vancouver {
     background: url("https://etacanadavisa.com.br/main/wp-content/uploads/2019/05/1557450116_image1.jpeg") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .sydney {
     background: url("https://ep01.epimg.net/elviajero/imagenes/2019/06/05/album/1559747677_909530_1559748130_noticia_normal.jpg") center/cover;
-    height: 150px;
-    width: 100%;
 }
 
 .linha-divisoria {
     width: 100%;
     height: 6px;
     background-color: #1100FF;
+    margin-bottom: 5px;
 }
 
 .bottomCard {
@@ -122,7 +115,7 @@ body {
 }
 
 .info-preco {
-    font-size: 12px;
+    font-size: 10px;
     color: #445b73;
     text-align: right;
 }
@@ -146,6 +139,7 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .pacote {
@@ -167,4 +161,390 @@ body {
     color: #1100FF;
     margin-left: 25px;
     cursor: pointer;
+}
+
+@media screen and (min-width:425px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 60vh;
+        overflow: hidden;
+    }
+    .card {
+        background-color: #EAEFF6;
+        border-radius: 10px;
+        width: 250px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .title {
+        color: #1100FF;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .secondText {
+        font-size: 14px;
+        color: #828fa1;
+    }
+    .tamanho-img {
+        height: 200px;
+        width: 100%;
+    }
+    .linha-divisoria {
+        width: 100%;
+        height: 8px;
+        background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+    .bottomCard {
+        padding: 15px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomText {
+        font-size: 10px;
+        color: #445b73;
+        text-align: left;
+        padding: 4px;
+    }
+    .info-preco {
+        font-size: 12px;
+        color: #445b73;
+        text-align: right;
+    }
+    .preco {
+        font-weight: bold;
+        color: black;
+    }
+    .preco-valor {
+        font-weight: bold;
+        font-size: 26px;
+        color: black;
+    }
+    .preco-a-vista {
+        font-size: 9px;
+    }
+    .actionsCard {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .pacote {
+        background: none;
+        border: none;
+        color: #1100FF;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .adulto {
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .card {
+        background-color: #EAEFF6;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .topCard {
+        padding: 20px;
+        height: 130px;
+        text-align: center;
+    }
+    .title {
+        color: #1100FF;
+        margin-bottom: 15px;
+    }
+    .secondText {
+        font-size: 16px;
+        color: #828fa1;
+    }
+    .tamanho-img {
+        height: 300px;
+        width: 100%;
+    }
+    .linha-divisoria {
+        width: 100%;
+        height: 8px;
+        background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+    .bottomCard {
+        padding: 20px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomText {
+        font-size: 12px;
+        color: #445b73;
+        padding: 4px;
+    }
+    .info-preco {
+        font-size: 12px;
+        color: #445b73;
+    }
+    .preco {
+        font-weight: bold;
+        color: black;
+    }
+    .preco-valor {
+        font-weight: bold;
+        font-size: 32px;
+        color: black;
+    }
+    .preco-a-vista {
+        font-size: 12px;
+    }
+    .actionsCard {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+    .pacote {
+        background: none;
+        border: none;
+        color: #1100FF;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .adulto {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .card {
+        background-color: #EAEFF6;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .topCard {
+        padding: 20px;
+        height: 130px;
+        text-align: center;
+    }
+    .title {
+        color: #1100FF;
+        margin-bottom: 15px;
+    }
+    .secondText {
+        font-size: 16px;
+        color: #828fa1;
+    }
+    .tamanho-img {
+        height: 300px;
+        width: 100%;
+    }
+    .linha-divisoria {
+        width: 100%;
+        height: 8px;
+        background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+    .bottomCard {
+        padding: 20px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomText {
+        font-size: 12px;
+        color: #445b73;
+        padding: 4px;
+    }
+    .info-preco {
+        font-size: 12px;
+        color: #445b73;
+    }
+    .preco {
+        font-weight: bold;
+        color: black;
+    }
+    .preco-valor {
+        font-weight: bold;
+        font-size: 32px;
+        color: black;
+    }
+    .preco-a-vista {
+        font-size: 12px;
+    }
+    .actionsCard {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+    .pacote {
+        background: none;
+        border: none;
+        color: #1100FF;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .adulto {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .card {
+        background-color: #EAEFF6;
+        border-radius: 10px;
+        width: 450px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .topCard {
+        padding: 20px;
+        height: 180px;
+        text-align: center;
+    }
+    .title {
+        color: #1100FF;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .secondText {
+        font-size: 20px;
+        color: #828fa1;
+    }
+    .tamanho-img {
+        height: 400px;
+        width: 100%;
+    }
+    .linha-divisoria {
+        width: 100%;
+        height: 10px;
+        background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+    .bottomCard {
+        padding: 40px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomText {
+        font-size: 16px;
+        color: #445b73;
+        padding: 4px;
+    }
+    .info-preco {
+        font-size: 18px;
+        color: #445b73;
+    }
+    .preco {
+        font-weight: bold;
+        color: black;
+    }
+    .preco-valor {
+        font-weight: bold;
+        font-size: 48px;
+        color: black;
+    }
+    .preco-a-vista {
+        font-size: 16px;
+    }
+    .actionsCard {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    .pacote {
+        background: none;
+        border: none;
+        color: #1100FF;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .adulto {
+        font-weight: bold;
+        font-size: 20px;
+    }
 }
