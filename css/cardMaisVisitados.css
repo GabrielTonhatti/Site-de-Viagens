@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 65%;
+    cursor: pointer;
 }
 
 .card {
@@ -449,6 +450,28 @@ body {
     .adulto {
         font-weight: bold;
         font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .seta-esquerda {
+        font-size: 30px;
+        color: #1100FF;
+        margin-left: 200px;
+        cursor: pointer;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .seta-direita {
+        font-size: 30px;
+        color: #1100FF;
+        margin-right: 200px;
+        cursor: pointer;
     }
 }
 
