@@ -10,8 +10,10 @@ body {
     align-items: center;
     align-content: center;
     margin: 0 auto;
-    height: 50vh;
+    /* height: 50vh; */
     overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .seta-esquerda {
@@ -172,7 +174,9 @@ body {
         align-items: center;
         align-content: center;
         margin: 0 auto;
-        height: 60vh;
+        /* height: 60vh; */
+        padding-top: 40px;
+        padding-bottom: 40px;
         overflow: hidden;
     }
     .card {
@@ -269,7 +273,9 @@ body {
         align-items: center;
         align-content: center;
         margin: 0 auto;
-        height: 80vh;
+        /* height: 80vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
         overflow: hidden;
     }
     .cards {
@@ -365,7 +371,9 @@ body {
         align-items: center;
         align-content: center;
         margin: 0 auto;
-        height: 80vh;
+        /* height: 80vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
         overflow: hidden;
     }
     .cards {
@@ -454,6 +462,19 @@ body {
 }
 
 @media screen and (min-width:1920px) {
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        /* height: 80vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
+    
     .seta-esquerda {
         font-size: 30px;
         color: #1100FF;
@@ -483,7 +504,8 @@ body {
         align-items: center;
         align-content: center;
         margin: 0 auto;
-        height: 80vh;
+        /* height: 80vh; */
+        padding-top: 80px;
         overflow: hidden;
     }
     .cards {
