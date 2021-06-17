@@ -39,9 +39,9 @@ body {
     display: block;
 }
 
-/* .card:hover {
+.card:hover {
     transform: scale(1.07);
-} */
+}
 
 .topCard {
     padding: 20px;
