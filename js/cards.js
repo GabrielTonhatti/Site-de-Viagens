@@ -1,6 +1,6 @@
-const slides = document.querySelectorAll('.card');
-const nextButton = document.querySelector('.button--next');
-const prevButton = document.querySelector('.button--prev');
+const slides = document.querySelectorAll('.card-mais-visitados');
+const nextButton = document.querySelector('.button--next-1');
+const prevButton = document.querySelector('.button--prev-1');
 let windowWidth = window.innerWidth;
 
 console.log(slides)
