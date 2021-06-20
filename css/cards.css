@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
 body {
     font-family: 'Fira Sans', sans-serif;
-}
+} */
 
 .mais-visitados {
     display: flex;
@@ -26,7 +26,6 @@ body {
     padding-bottom: 40px;
     padding-top: 40px;
 }
-
 
 .seta-esquerda-1 {
     font-size: 30px;
@@ -74,6 +73,11 @@ body {
     background-color: #f7f5f5;
 }
 
+.card-ferias:hover {
+    transform: scale(1.07);
+    background-color: #f7f5f5;
+}
+
 .topCard {
     padding: 20px;
     padding-top: 10px;
@@ -101,50 +105,6 @@ body {
 .tamanho-img {
     height: 150px;
     width: 100%;
-}
-
-.las-vegas {
-    background: url("https://media.istockphoto.com/photos/panoramic-view-of-las-vegas-strip-at-night-in-nevada-picture-id1166193649?k=6&m=1166193649&s=170667a&w=0&h=zshadBhEKIIUVDLA25I4-KckFJanWok46Zz34tzVnxg=") center/cover;
-}
-
-.kyoto {
-    background: url("http://www.qualviagem.com.br/wp-content/uploads/2016/09/iStock_34637998_SMALL-e1473797953707.jpg") center/cover;
-}
-
-.paris {
-    background: url("https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/04/paris_na_primavera.jpg?resize=740,480") center/cover;
-}
-
-.dubai {
-    background: url("https://www.segueviagem.com.br/wp-content/uploads/2020/07/shutterstock_151616084-1024x684.jpg") center/cover;
-}
-
-.honolulu {
-    background: url("https://radarvip.com/wp-content/uploads/2016/08/maxresdefault.jpg") center/cover;
-}
-
-.vancouver {
-    background: url("https://etacanadavisa.com.br/main/wp-content/uploads/2019/05/1557450116_image1.jpeg") center/cover;
-}
-
-.sydney {
-    background: url("https://ep01.epimg.net/elviajero/imagenes/2019/06/05/album/1559747677_909530_1559748130_noticia_normal.jpg") center/cover;
-}
-
-.maceio {
-    background: url("https://maceioatlantic.com/wp-content/uploads/2017/09/praias-urbanas-maceio.jpg") center/cover;
-}
-
-.rio-janeiro {
-    background: url("https://4.bp.blogspot.com/-XCYK3NGAlf8/Tv-fPSQp9sI/AAAAAAAAMoY/3y3Ekj2UFLU/s1600/rio-de-janeiro_.jpg") center/cover;
-}
-
-.natal{
-    background: url("https://vidasemparedes.com.br/wp-content/uploads/2020/03/natal-rn-vidasemparedes-1.jpg") center/cover;
-}
-
-.fernando-de-noronha {
-    background: url("https://www.viagenscinematograficas.com.br/wp-content/uploads/2019/08/Noronha-Tour-Passeios-Baratos-Capa.jpg") center/cover;
 }
 
 .divisoria-mais-visitados {
@@ -232,7 +192,7 @@ body {
     cursor: pointer;
 }
 
-.seta-direita-2{
+.seta-direita-2 {
     font-size: 30px;
     color: #108d41;
     margin-left: 25px;
@@ -257,7 +217,6 @@ body {
         padding-bottom: 40px;
         overflow: hidden;
     }
-
     .ferias {
         display: flex;
         justify-content: space-evenly;
@@ -269,7 +228,6 @@ body {
         padding-bottom: 40px;
         overflow: hidden;
     }
-
     .card-mais-visitados {
         background-color: #f9f9f9;
         border-radius: 10px;
@@ -277,7 +235,6 @@ body {
         transition-duration: .4s;
         display: none;
     }
-
     .card-ferias {
         background-color: #f9f9f9;
         border-radius: 10px;
@@ -293,13 +250,11 @@ body {
         font-size: 22px;
         margin-bottom: 15px;
     }
-
     .title-card-ferias {
         color: #108d41;
         font-size: 22px;
         margin-bottom: 15px;
     }
-
     .secondText {
         font-size: 14px;
         color: #828fa1;
@@ -314,14 +269,12 @@ body {
         background-color: #1100FF;
         margin-bottom: 5px;
     }
-
     .divisoria-ferias {
         width: 100%;
         height: 8px;
         background-color: #108d41;
         margin-bottom: 5px;
     }
-    
     .bottomCard {
         padding: 15px;
         padding-top: 0px;
@@ -365,16 +318,15 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
-
     .pacote-ferias {
         background: none;
         border: none;
-        color: #108d41;        ;
+        color: #108d41;
+        ;
         font-size: 12px;
         font-weight: bold;
         cursor: pointer;
     }
-
     .adulto {
         font-weight: bold;
         font-size: 12px;
@@ -401,7 +353,6 @@ body {
         padding-bottom: 80px;
         overflow: hidden;
     }
-
     .ferias {
         display: flex;
         justify-content: space-evenly;
@@ -425,144 +376,6 @@ body {
         transition-duration: .4s;
         display: none;
     }
-
-    .card-ferias {
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        width: 350px;
-        transition-duration: .4s;
-        display: none;
-    }
-    .active {
-        display: block;
-    }
-    .topCard {
-        padding: 20px;
-        height: 130px;
-        text-align: center;
-    }
-    .title-mais-visitados {
-        color: #1100FF;
-        margin-bottom: 15px;
-    }
-
-    .title-card-ferias{
-        color: #108d41;
-        margin-bottom: 15px;
-    }
-    .secondText {
-        font-size: 16px;
-        color: #828fa1;
-    }
-    .tamanho-img {
-        height: 300px;
-        width: 100%;
-    }
-    .divisoria-mais-visitados {
-        width: 100%;
-        height: 8px;
-        background-color: #1100FF;
-        margin-bottom: 5px;
-    }
-
-    .divisoria-ferias {
-        width: 100%;
-        height: 8px;
-        background-color: #108d41;
-        margin-bottom: 5px;
-    }
-    .bottomCard {
-        padding: 20px;
-        padding-top: 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .bottomText {
-        font-size: 12px;
-        color: #445b73;
-        padding: 4px;
-    }
-    .info-preco {
-        font-size: 12px;
-        color: #445b73;
-    }
-    .preco {
-        font-weight: bold;
-        color: black;
-    }
-    .preco-valor {
-        font-weight: bold;
-        font-size: 32px;
-        color: black;
-    }
-    .preco-a-vista {
-        font-size: 12px;
-    }
-    .actionsCard {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 40px;
-    }
-    .pacote-mais-visitados {
-        background: none;
-        border: none;
-        color: #1100FF;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .pacote-ferias {
-        background: none;
-        border: none;
-        color: #108d41;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    .adulto {
-        font-weight: bold;
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .mais-visitados {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        align-items: center;
-        align-content: center;
-        margin: 0 auto;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        overflow: hidden;
-    }
-    .ferias{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        align-items: center;
-        align-content: center;
-        margin: 0 auto;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        overflow: hidden;
-    }
-    .cards {
-        display: flex;
-        justify-content: space-evenly;
-        width: 80%;
-    }
-    .card-mais-visitados {
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        width: 350px;
-        transition-duration: .4s;
-        display: none;
-    }
-
     .card-ferias {
         background-color: #f9f9f9;
         border-radius: 10px;
@@ -600,7 +413,6 @@ body {
         background-color: #1100FF;
         margin-bottom: 5px;
     }
-
     .divisoria-ferias {
         width: 100%;
         height: 8px;
@@ -648,7 +460,139 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
+    .pacote-ferias {
+        background: none;
+        border: none;
+        color: #108d41;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .adulto {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
 
+@media screen and (min-width:1440px) {
+    .mais-visitados {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
+    .ferias {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .card-mais-visitados {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .card-ferias {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .topCard {
+        padding: 20px;
+        height: 130px;
+        text-align: center;
+    }
+    .title-mais-visitados {
+        color: #1100FF;
+        margin-bottom: 15px;
+    }
+    .title-card-ferias {
+        color: #108d41;
+        margin-bottom: 15px;
+    }
+    .secondText {
+        font-size: 16px;
+        color: #828fa1;
+    }
+    .tamanho-img {
+        height: 300px;
+        width: 100%;
+    }
+    .divisoria-mais-visitados {
+        width: 100%;
+        height: 8px;
+        background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+    .divisoria-ferias {
+        width: 100%;
+        height: 8px;
+        background-color: #108d41;
+        margin-bottom: 5px;
+    }
+    .bottomCard {
+        padding: 20px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottomText {
+        font-size: 12px;
+        color: #445b73;
+        padding: 4px;
+    }
+    .info-preco {
+        font-size: 12px;
+        color: #445b73;
+    }
+    .preco {
+        font-weight: bold;
+        color: black;
+    }
+    .preco-valor {
+        font-weight: bold;
+        font-size: 32px;
+        color: black;
+    }
+    .preco-a-vista {
+        font-size: 12px;
+    }
+    .actionsCard {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+    .pacote-mais-visitados {
+        background: none;
+        border: none;
+        color: #1100FF;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
     .pacote-ferias {
         background: none;
         border: none;
@@ -675,7 +619,6 @@ body {
         padding-bottom: 80px;
         overflow: hidden;
     }
-
     .ferias {
         display: flex;
         justify-content: space-evenly;
@@ -693,7 +636,6 @@ body {
         margin-left: 200px;
         cursor: pointer;
     }
-
     .seta-esquerda-2 {
         font-size: 30px;
         color: #108d41;
@@ -711,7 +653,6 @@ body {
         margin-right: 200px;
         cursor: pointer;
     }
-
     .seta-direita-2 {
         font-size: 30px;
         color: #108d41;
@@ -731,7 +672,6 @@ body {
         padding-top: 80px;
         overflow: hidden;
     }
-
     .ferias {
         display: flex;
         justify-content: space-evenly;
@@ -754,7 +694,6 @@ body {
         transition-duration: .4s;
         display: none;
     }
-
     .card-ferias {
         background-color: #f9f9f9;
         border-radius: 10px;
@@ -775,7 +714,6 @@ body {
         font-size: 32px;
         margin-bottom: 15px;
     }
-
     .title-card-ferias {
         color: #108d41;
         font-size: 32px;
@@ -836,7 +774,6 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
-
     .pacote-ferias {
         background: none;
         border: none;
