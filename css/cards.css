@@ -15,9 +15,29 @@ body {
     padding-top: 40px;
 }
 
+.ferias {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
 .seta-esquerda-1 {
     font-size: 30px;
     color: #1100FF;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.seta-esquerda-2 {
+    font-size: 30px;
+    color: #108d41;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -30,7 +50,15 @@ body {
 }
 
 .card-mais-visitados {
-    background-color: #EAEFF6;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 200px;
+    transition-duration: .4s;
+    display: none;
+}
+
+.card-ferias {
+    background-color: #f9f9f9;
     border-radius: 10px;
     width: 200px;
     transition-duration: .4s;
@@ -43,6 +71,7 @@ body {
 
 .card-mais-visitados:hover {
     transform: scale(1.07);
+    background-color: #f7f5f5;
 }
 
 .topCard {
@@ -54,6 +83,12 @@ body {
 
 .title-mais-visitados {
     color: #1100FF;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.title-card-ferias {
+    color: #108d41;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -96,10 +131,33 @@ body {
     background: url("https://ep01.epimg.net/elviajero/imagenes/2019/06/05/album/1559747677_909530_1559748130_noticia_normal.jpg") center/cover;
 }
 
+.maceio {
+    background: url("https://maceioatlantic.com/wp-content/uploads/2017/09/praias-urbanas-maceio.jpg") center/cover;
+}
+
+.rio-janeiro {
+    background: url("https://4.bp.blogspot.com/-XCYK3NGAlf8/Tv-fPSQp9sI/AAAAAAAAMoY/3y3Ekj2UFLU/s1600/rio-de-janeiro_.jpg") center/cover;
+}
+
+.natal{
+    background: url("https://vidasemparedes.com.br/wp-content/uploads/2020/03/natal-rn-vidasemparedes-1.jpg") center/cover;
+}
+
+.fernando-de-noronha {
+    background: url("https://www.viagenscinematograficas.com.br/wp-content/uploads/2019/08/Noronha-Tour-Passeios-Baratos-Capa.jpg") center/cover;
+}
+
 .divisoria-mais-visitados {
     width: 100%;
     height: 6px;
     background-color: #1100FF;
+    margin-bottom: 5px;
+}
+
+.divisoria-ferias {
+    width: 100%;
+    height: 6px;
+    background-color: #108d41;
     margin-bottom: 5px;
 }
 
@@ -153,6 +211,15 @@ body {
     cursor: pointer;
 }
 
+.pacote-ferias {
+    background: none;
+    border: none;
+    color: #108d41;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .adulto {
     font-weight: bold;
     font-size: 10px;
@@ -161,6 +228,13 @@ body {
 .seta-direita-1 {
     font-size: 30px;
     color: #1100FF;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.seta-direita-2{
+    font-size: 30px;
+    color: #108d41;
     margin-left: 25px;
     cursor: pointer;
 }
@@ -183,8 +257,29 @@ body {
         padding-bottom: 40px;
         overflow: hidden;
     }
+
+    .ferias {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+
     .card-mais-visitados {
-        background-color: #EAEFF6;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 250px;
+        transition-duration: .4s;
+        display: none;
+    }
+
+    .card-ferias {
+        background-color: #f9f9f9;
         border-radius: 10px;
         width: 250px;
         transition-duration: .4s;
@@ -198,6 +293,13 @@ body {
         font-size: 22px;
         margin-bottom: 15px;
     }
+
+    .title-card-ferias {
+        color: #108d41;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
     .secondText {
         font-size: 14px;
         color: #828fa1;
@@ -212,6 +314,14 @@ body {
         background-color: #1100FF;
         margin-bottom: 5px;
     }
+
+    .divisoria-ferias {
+        width: 100%;
+        height: 8px;
+        background-color: #108d41;
+        margin-bottom: 5px;
+    }
+    
     .bottomCard {
         padding: 15px;
         padding-top: 0px;
@@ -255,6 +365,16 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
+
+    .pacote-ferias {
+        background: none;
+        border: none;
+        color: #108d41;        ;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
     .adulto {
         font-weight: bold;
         font-size: 12px;
@@ -281,13 +401,33 @@ body {
         padding-bottom: 80px;
         overflow: hidden;
     }
+
+    .ferias {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
     .cards {
         display: flex;
         justify-content: space-evenly;
         width: 80%;
     }
     .card-mais-visitados {
-        background-color: #EAEFF6;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+
+    .card-ferias {
+        background-color: #f9f9f9;
         border-radius: 10px;
         width: 350px;
         transition-duration: .4s;
@@ -305,6 +445,11 @@ body {
         color: #1100FF;
         margin-bottom: 15px;
     }
+
+    .title-card-ferias{
+        color: #108d41;
+        margin-bottom: 15px;
+    }
     .secondText {
         font-size: 16px;
         color: #828fa1;
@@ -317,6 +462,13 @@ body {
         width: 100%;
         height: 8px;
         background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+
+    .divisoria-ferias {
+        width: 100%;
+        height: 8px;
+        background-color: #108d41;
         margin-bottom: 5px;
     }
     .bottomCard {
@@ -356,6 +508,15 @@ body {
         background: none;
         border: none;
         color: #1100FF;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .pacote-ferias {
+        background: none;
+        border: none;
+        color: #108d41;
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
@@ -378,13 +539,32 @@ body {
         padding-bottom: 80px;
         overflow: hidden;
     }
+    .ferias{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
     .cards {
         display: flex;
         justify-content: space-evenly;
         width: 80%;
     }
     .card-mais-visitados {
-        background-color: #EAEFF6;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 350px;
+        transition-duration: .4s;
+        display: none;
+    }
+
+    .card-ferias {
+        background-color: #f9f9f9;
         border-radius: 10px;
         width: 350px;
         transition-duration: .4s;
@@ -402,6 +582,10 @@ body {
         color: #1100FF;
         margin-bottom: 15px;
     }
+    .title-card-ferias {
+        color: #108d41;
+        margin-bottom: 15px;
+    }
     .secondText {
         font-size: 16px;
         color: #828fa1;
@@ -414,6 +598,13 @@ body {
         width: 100%;
         height: 8px;
         background-color: #1100FF;
+        margin-bottom: 5px;
+    }
+
+    .divisoria-ferias {
+        width: 100%;
+        height: 8px;
+        background-color: #108d41;
         margin-bottom: 5px;
     }
     .bottomCard {
@@ -457,6 +648,15 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
+
+    .pacote-ferias {
+        background: none;
+        border: none;
+        color: #108d41;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
     .adulto {
         font-weight: bold;
         font-size: 16px;
@@ -475,9 +675,28 @@ body {
         padding-bottom: 80px;
         overflow: hidden;
     }
+
+    .ferias {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
     .seta-esquerda-1 {
         font-size: 30px;
         color: #1100FF;
+        margin-left: 200px;
+        cursor: pointer;
+    }
+
+    .seta-esquerda-2 {
+        font-size: 30px;
+        color: #108d41;
         margin-left: 200px;
         cursor: pointer;
     }
@@ -489,6 +708,13 @@ body {
     .seta-direita-1 {
         font-size: 30px;
         color: #1100FF;
+        margin-right: 200px;
+        cursor: pointer;
+    }
+
+    .seta-direita-2 {
+        font-size: 30px;
+        color: #108d41;
         margin-right: 200px;
         cursor: pointer;
     }
@@ -505,13 +731,32 @@ body {
         padding-top: 80px;
         overflow: hidden;
     }
+
+    .ferias {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        overflow: hidden;
+    }
     .cards {
         display: flex;
         justify-content: space-evenly;
         width: 80%;
     }
     .card-mais-visitados {
-        background-color: #EAEFF6;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        width: 450px;
+        transition-duration: .4s;
+        display: none;
+    }
+
+    .card-ferias {
+        background-color: #f9f9f9;
         border-radius: 10px;
         width: 450px;
         transition-duration: .4s;
@@ -527,6 +772,12 @@ body {
     }
     .title-mais-visitados {
         color: #1100FF;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .title-card-ferias {
+        color: #108d41;
         font-size: 32px;
         margin-bottom: 15px;
     }
@@ -581,6 +832,15 @@ body {
         background: none;
         border: none;
         color: #1100FF;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .pacote-ferias {
+        background: none;
+        border: none;
+        color: #108d41;
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
