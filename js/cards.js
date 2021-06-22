@@ -58,34 +58,34 @@ if (windowWidth < 768) {
     })
 }
 
-// if (windowWidth >= 768 && windowWidth < 1440) {
-//     // Mais visitados
-//     slides1[1].classList.add('active');
+if (windowWidth >= 768 && windowWidth < 1440) {
+    // Mais visitados
+    slides1[1].classList.add('active');
 
-//     // Ferias
-//     slides2[1].classList.add('active');
-
-
-// } else if (windowWidth >= 1440 && windowWidth < 2560) {
-//     // Mais visitados
-//     slides1[1].classList.add('active');
-//     slides1[2].classList.add('active');
-
-//     // Ferias
-//     slides2[1].classList.add('active');
-//     slides2[2].classList.add('active');
+    // Ferias
+    slides2[1].classList.add('active');
 
 
-// } else if (windowWidth >= 2560) {
-//     // Mais visitados
-//     slides1[1].classList.add('active');
-//     slides1[2].classList.add('active');
-//     slides1[3].classList.add('active');
+} else if (windowWidth >= 1440 && windowWidth < 2560) {
+    // Mais visitados
+    slides1[1].classList.add('active');
+    slides1[2].classList.add('active');
 
-//     // Ferias
-//     slides2[1].classList.add('active');
-//     slides2[2].classList.add('active');
-//     slides2[3].classList.add('active');
+    // Ferias
+    slides2[1].classList.add('active');
+    slides2[2].classList.add('active');
 
 
-// }
+} else if (windowWidth >= 2560) {
+    // Mais visitados
+    slides1[1].classList.add('active');
+    slides1[2].classList.add('active');
+    slides1[3].classList.add('active');
+
+    // Ferias
+    slides2[1].classList.add('active');
+    slides2[2].classList.add('active');
+    slides2[3].classList.add('active');
+
+
+}
