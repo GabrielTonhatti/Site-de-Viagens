@@ -343,7 +343,7 @@ img {
     }
     .login-Invalid {
         border: 2px solid rgb(6, 6, 221);
-        background-color: rgb(82, 79, 226);
+        background-color: #0045ff;
         color: #fff;
         padding: 9px 0 0 22px;
         color: #fff;

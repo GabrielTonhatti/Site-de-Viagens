@@ -242,12 +242,12 @@
     }
     .title-mais-visitados {
         color: #1100FF;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
     .title-card-ferias {
         color: #108d41;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
     .secondText {
@@ -602,7 +602,7 @@
     }
 }
 
-@media screen and (min-width:1920px) {
+@media screen and (min-width:1700px) {
     .mais-visitados {
         display: flex;
         justify-content: space-evenly;
